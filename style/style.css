@@ -50,23 +50,42 @@ ol {
     text-align: center;
 }
 
-.line-cross span.white {
+.line-cross span {
     width: 100%;
     display: inline-block;
     height: 100%;
 }
 
-.white {
+.line-cross span.white {
     background-color: #FFF;
 }
 
-.velvet {
+.line-cross span.velvet {
     background-color: #f38181;
 }
 
 .section-padding {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+p.grey-text {
+    color: #7e7d7d;
+}
+
+.section-heading {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 960px;
+    padding-bottom: 100px;
+}
+
+.section-heading h2 {
+    font-size: 24px;
+}
+
+.section-heading h3 {
+    font-size: 30px;
 }
 
 
@@ -154,4 +173,119 @@ nav.colored {
 
 .header-caption h1 {
     font-size: 150px;
+}
+
+
+/*About us section*/
+
+.about-item {
+    position: relative;
+    width: 31%;
+    transition: all 0.2s ease-out 0s;
+    margin-bottom: 100px;
+}
+
+.about-item img {
+    width: 100%;
+}
+
+.middle-img-hover {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #FFF;
+    text-align: center;
+    transition: all 0.2s ease-out 0s;
+    opacity: 0;
+}
+
+.about-item::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    opacity: 0.8;
+    transition: all 0.2s ease-out 0s;
+}
+
+.about-item:hover {
+    box-shadow: 10px 10px 0px #95e1d3;
+}
+
+.about-item:hover .middle-img-hover {
+    left: 50%;
+    opacity: 1;
+}
+
+.about-item:hover::after {
+    width: 100%;
+}
+
+.about-list ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.about-counter {
+    background-color: #95e1d3;
+}
+
+.about-counter ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.counter-item {
+    text-align: center;
+    color: #FFF;
+    padding: 80px 20px;
+    width: 20%;
+}
+
+.counter-item .counter-number {
+    font-size: 72px;
+}
+
+.counter-item .counter-caption {
+    font-size: 14px;
+}
+
+
+/*Service section*/
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.service-img i {
+    font-size: 50px;
+    margin-right: 20px;
+    color: #95e1d3;
+}
+
+.service-content h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-content p {
+    font-size: 15px;
+}
+
+.service-item {
+    width: 30%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 50px;
 }
