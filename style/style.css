@@ -1,0 +1,157 @@
+.rainbow-bg {
+    background-image: -moz-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.special-font {
+    font-family: 'Kaushan Script', cursive !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.btn-white {
+    border: 5px solid #FFF;
+    color: #FFF;
+}
+
+.line-cross {
+    margin: 0 auto;
+    width: 50px;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.line-cross span.white {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+}
+
+.white {
+    background-color: #FFF;
+}
+
+.velvet {
+    background-color: #f38181;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/*Header*/
+
+#header {
+    background-image: url("../img/picture.png");
+    background-position: top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+nav .container {
+    font-size: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+}
+
+nav.colored {
+    background-color: rgba(56, 55, 55, 0.7);
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: left;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav ul li {
+    padding: 20px;
+}
+
+.main-nav ul li:last-child {
+    padding-right: 0;
+}
+
+.main-nav ul li a {
+    color: #FFF;
+    position: relative;
+    transition: all 0.3s linear 0s;
+}
+
+.main-nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fce38a;
+    bottom: -20px;
+    left: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.main-nav ul li a:hover::after {
+    width: 100%;
+}
+
+.main-nav ul li a:hover {
+    color: #fce38a;
+}
+
+.header-caption {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.header-caption h2 {
+    font-size: 72px;
+}
+
+.header-caption h1 {
+    font-size: 150px;
+}
