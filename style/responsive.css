@@ -1,0 +1,70 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    .header-caption h1 {
+        font-size: 130px;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .footer-item {
+        width: 70%;
+    }
+    
+    .footer-item:first-child {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .header-caption h1 {
+        font-size: 60px;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .footer-item {
+        width: 70%;
+    }
+    
+    .footer-item:first-child {
+        width: 100%;
+    }
+    .what-we-do-img,
+    .what-we-do-content {
+        width: 100%;
+    }
+
+    .about-item {
+        width: 100%;
+    }
+
+    .counter-item {
+        width: 100%;
+    }
+
+    .middle-img-hover .sm-list {
+        width: 220px;
+    }
+
+    .our-work-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2"
+        "img-3 img-3 img-3 img-3"
+        "img-4 img-4 img-4 img-4"
+        "img-5 img-5 img-5 img-5"
+        "img-6 img-6 img-6 img-6"
+        "img-7 img-7 img-7 img-7";
+    }
+
+    .client-item {
+        width: 100%;
+    }
+
+    .blog-item {
+        width: 100%;
+    }
+
+    .footer-item {
+        width: 100%;
+    }
+}

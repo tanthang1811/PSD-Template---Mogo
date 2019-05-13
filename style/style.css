@@ -236,6 +236,7 @@ nav.colored {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .about-counter {
@@ -246,6 +247,7 @@ nav.colored {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .counter-item {
@@ -274,6 +276,7 @@ nav.colored {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .service-img i {
@@ -331,6 +334,7 @@ nav.colored {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .what-we-do-img,
@@ -406,6 +410,7 @@ nav.colored {
 .team-container ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .middle-img-hover .sm-list li {
@@ -561,6 +566,7 @@ nav.colored {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -570,6 +576,7 @@ nav.colored {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .blog-item {
@@ -682,6 +689,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
